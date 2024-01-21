@@ -41,12 +41,14 @@ customSizeBtn.addEventListener('click', () => {
    if (currGridSize < 1 || currGridSize > 100) {
       alert('Invald number. The number must be 1-100');
    }
-   gridSquareList.forEach(gridSquare => {
-      gridSquare.remove();
-   })
-   populateGrid(currGridSize);
-   addEventListenerToSquares(gridSquareList);
-   setCSSGridSize(currGridSize);
+   else {
+      gridSquareList.forEach(gridSquare => {
+         gridSquare.remove();
+      })
+      populateGrid(currGridSize);
+      addEventListenerToSquares(gridSquareList);
+      setCSSGridSize(currGridSize);
+   }
 })
 
 function setCSSGridSize(gridDimension) {
