@@ -1,0 +1,32 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+h1 {
+   text-align: center;
+   margin: 10px;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.grid-container {
+   border: 1px black solid;
+   width: 750px;
+   height: 750px;
+   margin: 25px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.grid-square {
+   background-color: white;
+   height: 6.25%;
+   width: 6.25%;
+   border: 1px black solid;
+}
