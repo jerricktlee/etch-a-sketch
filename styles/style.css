@@ -31,3 +31,15 @@ body {
    border: 1px black solid;
 }
 
+.reset-btn {
+   background-color: white;
+   border: 1px black solid;
+   padding: 10px;
+   margin-bottom: 10px;
+   border-radius: 8px;
+}
+
+.reset-btn:hover {
+   background-color: lightgray;
+}
+
