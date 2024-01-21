@@ -35,8 +35,7 @@ body {
    border: 1px black solid;
 }
 
-.reset-btn,
-.custom-size-btn {
+button {
    background-color: white;
    border: 1px black solid;
    padding: 10px;
@@ -44,8 +43,14 @@ body {
    border-radius: 8px;
 }
 
-.reset-btn:hover,
-.custom-size-btn:hover {
-   background-color: lightgray;
+button:hover {
+   background-color: rgb(211, 211, 211);
+}
+
+
+
+.btn-container {
+   display: flex;
+   gap: 15px;
 }
 
