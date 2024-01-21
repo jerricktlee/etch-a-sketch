@@ -1,9 +1,8 @@
 const GRID_SIZE = 16;
-let testVar = 0;
-
 
 let gridSquareList;
 const gridContainer = document.querySelector('.grid-container');
+const resetBtn = document.querySelector('.reset-btn');
 
 function populateGrid() {
    for (let i = 0; i < GRID_SIZE; i++) {
@@ -23,4 +22,10 @@ window.addEventListener('load', () =>{
          event.target.style.backgroundColor = 'black';
       });
    });
+})
+
+resetBtn.addEventListener('click', () => {
+   gridSquareList.forEach(gridSquare => {
+      gridSquare.style['background-color'] = 'white';
+   })
 })
